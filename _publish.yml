@@ -1,0 +1,4 @@
+- source: quakes.qmd
+  connect:
+    - id: 19ed3515-af0b-4318-a33c-c256c67570ca
+      url: 'https://colorado.posit.co/rsc/content/19ed3515-af0b-4318-a33c-c256c67570ca/'
