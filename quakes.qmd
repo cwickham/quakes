@@ -64,8 +64,7 @@ quake_map <- recent_quakes |>
       ) |> map(html),
     labelOptions = c(textsize = "15px")) |> 
   addLegend(title = "Magnitude", colors = mag_pal(0:5), labels = c("<1", 1:4,">5")) |> 
-  addProviderTiles(providers$Stadia.AlidadeSmooth, 
-    options = providerTileOptions(minZoom = 5, maxZoom = 10)) 
+  addTiles("http://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}", options = tileOptions(minZoom = 5, maxZoom = 10)) 
 ```
 
 ```{r}
