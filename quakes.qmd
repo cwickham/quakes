@@ -48,7 +48,7 @@ hours_last <- round(difftime(now_nz, recent_quakes$time[1], units = "hours"))
 ```
 
 ```{r}
-mag_pal <- colorBin("inferno", domain = 3:10, bins = c(0:5, 10))
+mag_pal <- colorBin("inferno", domain = 1:8, bins = c(0:5, 8))
 
 quake_map <- recent_quakes |> 
   leaflet() |> 
