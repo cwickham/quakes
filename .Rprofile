@@ -1,1 +1,3 @@
-source("renv/activate.R")
+if (Sys.getenv("R_CONFIG_ACTIVE") != "connect_cloud"){
+  source("renv/activate.R")
+}
