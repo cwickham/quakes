@@ -122,7 +122,7 @@ top_n_table <- top_n |>
 ### Row 
 
 ```{r}
-#| component: valuebox
+#| content: valuebox
 #| title: Hours since last earthquake
 list(
   icon = "stopwatch",
@@ -132,7 +132,7 @@ list(
 ```
 
 ```{r}
-#| component: valuebox
+#| content: valuebox
 #| title: Earthquakes in the last 24 hours
 list(
   icon = "activity",
