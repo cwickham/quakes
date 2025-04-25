@@ -30,6 +30,7 @@ recent_quakes <- resp |>
 ```{r}
 # Prettier times and dates
 recent_quakes <- recent_quakes |> 
+  filter(quality != 'deleted') |> 
   arrange(desc(time)) |> 
   mutate(
     time = force_tz(time, "Pacific/Auckland"),
